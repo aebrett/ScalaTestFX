@@ -16,7 +16,7 @@ val projectInfo = Seq(
   licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
 )
 
-crossScalaVersions := Seq("2.11.8", "2.12.0-M4")
+crossScalaVersions := Seq("2.11.8", "2.12.1")
 scalaVersion <<= crossScalaVersions { versions => versions.head }
 
 // ScalaTestFX project
@@ -58,9 +58,9 @@ lazy val scalatestfxDemos = Project(
 //
 // Dependencies
 //
-lazy val scalatest = "org.scalatest" %% "scalatest" % "3.0.0-RC2"
+lazy val scalatest = "org.scalatest" %% "scalatest" % "3.0.0"
 lazy val testfxCore = "org.testfx" % "testfx-core" % "4.0.4-alpha"
-lazy val scalafx = "org.scalafx" %% "scalafx" % "8.0.92-R10"
+lazy val scalafx = "org.scalafx" %% "scalafx" % "8.0.102-R11"
 
 //
 // Resolvers
